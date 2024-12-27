@@ -1,0 +1,251 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 71px 48px;
+    gap: 48px;
+    background-color: none;
+    
+}
+
+.filter-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.filter-button{
+    background-color: #031a3f00;
+    color: #3bbfc4;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 14px 26px;
+    border: 2px solid #3bbfc4;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.selected{
+    background-color: #3bbfc4;
+    color: #031a3f;
+    transition: all 0.3s;
+}
+
+.filter-button.selected:hover{
+    background-color: #3bbfc4;
+    color: #031a3f;
+    transition: all 0.3s;
+}
+
+.filter-button:hover{
+    background-color: #3bbfc4;
+    color: #031a3f;
+    transition: all 0.3s;
+}
+
+.projects-container{
+    max-width: 1224px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    
+}
+
+.project{
+    background-color: #0e203e;
+    border-radius: 16px;
+    gap: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: min-content;
+    transition: opacity 1s ease-in-out;
+    opacity: 0; 
+    display: none; 
+}
+
+.show{
+    opacity: 1; 
+    display: block;
+    animation: fadeInOut 0.4s ease-in-out;
+}
+
+@keyframes fadeInOut { 
+    0% { 
+        opacity: 0; 
+        display: none; 
+    } 
+  
+    50% { 
+        opacity: 0.5; 
+        display: block; 
+    } 
+  
+    100% { 
+        opacity: 1; 
+        display: block; 
+    } 
+}
+
+@keyframes linesShowUp { 
+    0% { 
+        -webkit-line-clamp: 2;
+    } 
+
+    2%{
+        -webkit-line-clamp: 3;
+    }
+    4%{
+        -webkit-line-clamp: 4;
+    }
+    6%{
+        -webkit-line-clamp: 5;
+    }
+    8%{
+        -webkit-line-clamp: 6;
+    }
+    10%{
+        -webkit-line-clamp: 7;
+    }
+  
+    100% { 
+        -webkit-line-clamp: 100;
+    } 
+}
+
+.project:hover{
+    transform: scale(1.02);
+    transition: all 0.3s;
+    background-color: #0f2c4f;
+    
+}
+
+.project:hover .project-description{
+    -webkit-line-clamp: 100;
+    transition: all 0.3s;
+    animation: linesShowUp 1s ease-in-out;
+}
+
+.padding{
+    padding: 16px;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.project-image{
+    display: block;
+    width: 360px;
+    height: 280px;
+    border-radius: 8px;
+    align-items: center;
+    padding-bottom: 0px;
+    transition: all 0.3s;
+}
+
+.viewMore{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #D87029;
+    padding: 16px 22px;
+    color: #fff;
+    border-radius: 100px;
+    display: none;
+    transition: all 0.3s;
+    opacity: 0; 
+    animation: fadeInOut 0.2s ease-in-out;
+}
+
+.viewMore:hover{
+    background-color: #812b18;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.image-container:hover .project-image{
+    filter: brightness(0.3) blur(3px);
+    transition: all 0.3s;
+}
+
+.image-container:hover .viewMore{
+    display: block;
+    transition: all 0.3s;
+    opacity: 1;
+    animation: fadeInOut 0.3s ease-in-out;
+}
+
+.project-title{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    color: #cee0fd;
+}
+
+.project-description{
+    font-size: 16px;
+    color: #fff;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    padding-top: 8px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 0px;
+    transition: all 0.3s;
+}
+
+.tag{
+    background-color: hsl(182, 34%, 80%);
+    font-size: 14px;
+    font-weight: normal;
+    color: #101012;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-family: 'Outfit', sans-serif;
+    display: none;
+    animation: fadeInOut 0.4s ease-in-out;
+}
+
+.tag.show{
+    display: block;
+    transition: all 1s;
+}
+
+.project:hover .tag{
+    display: block;
+}
+
+.tag.tag-three-d{
+    background-color: #CC933D;
+    display: block;
+}
+.tag.tag-two-d{
+    background-color: #39BF3F;
+    display: block;
+}
+.tag.tag-gd{
+    background-color: #399FBF;
+    display: block;
+}
+
+.tag.tag-design{
+    background-color: #b44695;
+    display: block;
+}

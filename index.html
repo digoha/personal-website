@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo H. Albernaz Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="stylesheet" href="src/css/colors.css">
+
+    <link rel="stylesheet" href="src/css/styleSectionProjects.css">
+
+</head>
+<body>
+    <header id="myHeader" class="sticky">
+        <div class="navBtns">
+            <a href="#home">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="headerIcons">
+            
+            <img class="language" src="src\images\icons\world_Icon.svg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="bg-home-about">
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="home-text">
+                    <div>
+                        <p class="hello-designer">Hello, I'm</p>
+                        <p class="name">Rodrigo Albernaz</p>
+                        <p class="hello-designer">Digital Designer</p>
+                    </div>
+                    <div class="home-buttons">
+                        <a class="button1 button-color" href="#contact">Contact Me</a>
+                        <a class=" button-color2 button2" href="#projects">My Work</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <img class="home-photo" src="src\images\PhotoBGS.png" alt="profile picture">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me" id="about-me">
+            <div class="about-me-content">
+                <p class="title">About Me</p>
+                <p class="text-about-me">Olá, me chamo Rodrigo Herstler Albernaz, sou Designer Digial, formado em bacharelado em Jogos Digitais pelo Centro Universitário Senac. </p>
+            </div>
+        </section>
+        </div>
+
+        <div class="bg-project-contact">
+        <section class="projects" id="projects">
+            <p class="title">Projects</p>
+            
+            <div class="filter-buttons" id="filter-btn-box">
+                <button class="filter-button selected" onclick="filterSelection('all')" id="all-btn">All</button>
+
+                <button class="filter-button" onclick="filterSelection('three-d')" id="three-d-btn">3D</button>
+
+                <button class="filter-button" onclick="filterSelection('two-d')" id="two-d-btn">2D</button>
+
+                
+                <button class="filter-button" onclick="filterSelection('design')" id="design-btn">Design</button> 
+                
+
+                <button class="filter-button" onclick="filterSelection('gd')" id="gd-btn">Game Development</button>
+            </div>
+
+            <ul class="projects-container">
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\kool-aid.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/JrrPx0" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Kool-Aid</p>
+                        <p class="project-description">3D Artwork created using the cover of the song Kool-Aid by Bring Me The Horizon as reference and inspiration.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">ZBrush</p>
+                        <p class="tag">Substance Painter</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Sculpt</p>
+                        <p class="tag">Retopology</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Baking</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\narsil.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/n03X0O" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Narsil</p>
+                        <p class="project-description">Game-ready low-poly sword asset inspired by The Lord of the Rings, created following Rafael Grassetti's course.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">ZBrush</p>
+                        <p class="tag">Substance Painter</p>
+                        <p class="tag">Marmoset Toolbag</p>
+                        <p class="tag">Game Asset</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Sculpt</p>
+                        <p class="tag">Retopology</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Baking</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project three-d two-d design gd show">
+                    <div class="image-container">
+                        <img src="src\images\projects\valkyr.png" alt="Project 1" class="project-image padding">
+                        <a href="https://digomeat.itch.io/vikings-hd2d" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Valquíria</p>
+                        <p class="project-description">HD-2D game developed in Unity as the final project for my Game Development degree. It is an RPG featuring Nordic thematic elements, created in collaboration with Pedro Monteiro and Sérgio Murillo.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-gd">Game Development</p>
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag tag-two-d">2D</p>
+                        <p class="tag tag-design">Design</p>
+                        <p class="tag">Unity</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Game Design</p>
+                        <p class="tag">Level Design</p>
+                        <p class="tag">UX/UI</p>
+                        <p class="tag">Pixel Art</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Game Asset</p>
+                        <p class="tag">Shader Graph</p>
+                        <p class="tag">Programming</p>
+                        <p class="tag">Environment Design</p>
+                        <p class="tag">VFXs</p>
+                        <p class="tag">SFXs</p>
+                    </div>
+                </li>
+
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\appleProject.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/G8YBYa" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Apple Basket</p>
+                        <p class="project-description">Blender 3D scene created following CG Boost's beginner course.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Sculpt</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\pigeonScene.png" alt="Project 2" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/NyzvvJ" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Baby pigeon in a spring field</p>
+                        <p class="project-description">Art made during the Revolution School's spring marathon.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project three-d gd show">
+                    <div class="image-container">
+                        <img src="src\images\projects\slime&shield.png" alt="Project 3" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/nElAbr" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Slime & Shield</p>
+                        <p class="project-description">3D game project developed in Unity for college. The game is a roguelike adventure featuring a slime that uses a shield as a weapon inside a procedural dungeon. It was created in collaboration with Athos Ferraz, Pedro Monteiro, and Sérgio Murillo.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag tag-gd">Game Development</p>
+                        <p class="tag">Unity</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Game Design</p>
+                        <p class="tag">Level Design</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Environment Design</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Game Asset</p>
+                        <p class="tag">Rigging</p>
+                        <p class="tag">Animation</p>
+                        <p class="tag">Rendering</p>
+                        <p class="tag">SFXs</p>
+                    </div>
+                </li>
+
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\labatut.png" alt="Project 3" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/2qzNXy" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Labatut</p>
+                        <p class="project-description">Sculpt of a Labatut monster created in ZBrush for the sculpting class taught by Vinicius Fragata.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">ZBrush</p>
+                        <p class="tag">Sculpt</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Anatomy</p>
+                    </div>
+                </li>
+
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\penguinChristmas.png" alt="Project 4" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/8bGbPq" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Pengo Christmas</p>
+                        <p class="project-description">3D Blender Scene of a penguin created for Christmas.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+                
+                <li class="project three-d gd show">
+                    <div class="image-container">
+                        <img src="src\images\projects\error120.png" alt="Project 1" class="project-image padding">
+                        <a href="https://henriqueassis.itch.io/error-120" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">ERROR 120</p>
+                        <p class="project-description">3D multiplayer game project created using Unity. The game is a hide-and-seek adventure between robots set on a radioactive island. It was developed in collaboration with Athos Ferraz, Bruno Franco, Gabriel da Silva, Henrique Assis, João Pedro, João Sonoda, Pedro Santos, Rafael Colpani, Sérgio Murillo, and Yasmin Silva.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-gd">Game Development</p>
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Unity</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Retopology</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Rigging</p>
+                        <p class="tag">Animation</p>
+                        <p class="tag">Environment Design</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Game Asset</p>
+                        <p class="tag">Concept Art</p>
+
+                    </div>
+                </li>
+
+                <li class="project three-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\delphis.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/Om8Q0w" target="_blank" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Delphis</p>
+                        <p class="project-description">3D creature created for a multiplayer game project in college.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">Sculpt</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Game Asset</p>
+                        <p class="tag">Retopology</p>
+                        <p class="tag">Rigging</p>
+                        <p class="tag">Animation</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project three-d two-d gd show">
+                    <div class="image-container">
+                        <img src="src\images\projects\shaderSceneHSR.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/BXzrXz" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Game Scene Recreation HSR</p>
+                        <p class="project-description">Scene created in Unity to explore material creation using the Shader Graph tool, with models made in Blender and some textures designed in Photoshop.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag tag-two-d">2D</p>
+                        <p class="tag tag-gd">Game Development</p>
+                        <p class="tag">Unity</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Photoshop</p>
+                        <p class="tag">Modeling</p>
+                        <p class="tag">UV Mapping</p>
+                        <p class="tag">Texturing</p>
+                        <p class="tag">Shader Graph</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project three-d two-d design show">
+                    <div class="image-container">
+                        <img src="src\images\projects\loneImp.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/elYDZX" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Lone Imp</p>
+                        <p class="project-description">Imp animation created for the Animation Design class. The character was designed in Illustrator, then rigged, animated, rendered, and edited in Blender using Grease Pencil.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-three-d">3D</p>
+                        <p class="tag tag-two-d">2D</p>
+                        <p class="tag tag-design">Design</p>
+                        <p class="tag">Illustrator</p>
+                        <p class="tag">Blender</p>
+                        <p class="tag">Rigging</p>
+                        <p class="tag">Animation</p>
+                        <p class="tag">Grease Pencil</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Digital Illustration</p>
+                        <p class="tag">Rendering</p>
+                    </div>
+                </li>
+
+                <li class="project two-d design show">
+                    <div class="image-container">
+                        <img src="src\images\projects\minecraftTime.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.artstation.com/artwork/aGEZB9" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Minecraft Time</p>
+                        <p class="project-description">Redesign of Minecraft in the Adventure Time style, created in Illustrator for the Drawing and Coloring class.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-two-d">2D</p>
+                        <p class="tag tag-design">Design</p>
+                        <p class="tag">Illustrator</p>
+                        <p class="tag">Character Creation</p>
+                        <p class="tag">Digital Illustration</p>
+                    </div>
+                </li>
+
+                <li class="project design two-d show">
+                    <div class="image-container">
+                        <img src="src\images\projects\banana.png" alt="Project 1" class="project-image padding">
+                        <a href="https://www.instagram.com/p/CmxNk4-LWbF/" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Banana Edit</p>
+                        <p class="project-description">Image manipulation created in Photoshop to explore its tools and test editing concepts.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-two-d">2D</p>
+                        <p class="tag tag-design">Design</p>
+                        <p class="tag">Photoshop</p>
+                        <p class="tag">Image Manipulation</p>
+                    </div>
+                </li>
+
+                <li class="project two-d gd design show">
+                    <div class="image-container">
+                        <img src="src\images\projects\astrotag.png" alt="Project 1" class="project-image padding">
+                        <a href="https://smurillof.itch.io/astrotag" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">Astrotag</p>
+                        <p class="project-description">2D game project developed in Unity for college. The game features a king-of-the-hill mode with spaceships and was created in collaboration with Athos Ferraz and Sérgio Murillo.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-gd">Game Development</p>
+                        <p class="tag tag-two-d">2D</p>
+                        <p class="tag tag-design">Design</p>
+                        <p class="tag">Unity</p>
+                        <p class="tag">Photoshop</p>
+                        <p class="tag">Programming</p>
+                        <p class="tag">Digital Illustration</p>
+                        <p class="tag">Animation</p>
+                        <p class="tag">Cutscene</p>
+                        <p class="tag">UX/UI</p>
+                        <p class="tag">Concept Art</p>
+                        <p class="tag">Frame by Frame</p>
+                        <p class="tag">Game Asset</p>
+                    </div>
+                </li>
+
+                <li class="project gd show">
+                    <div class="image-container">
+                        <img src="src\images\projects\aCasaDosUshers.png" alt="Project 1" class="project-image padding">
+                        <a href="https://digomeat.itch.io/a-casa-dos-ushers" target="_blank">
+                            <div class="viewMore">View More</div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <p class="project-title">A Casa dos Ushers</p>
+                        <p class="project-description">Visual novel game created in college using Ren'Py, in collaboration with João Pedro Marques and Sérgio Murillo.</p>
+                    </div>
+                    <div class="tags padding">
+                        <p class="tag tag-gd">Game Development</p>
+                        <p class="tag">Ren'Py</p>
+                        <p class="tag">Visual Novel</p>
+                        <p class="tag">Programming</p>
+                        <p class="tag">Writing</p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <div class="line">
+            <style>
+                .line{
+                    width: 100%; 
+                    height: 4px; 
+                    background-color: #fff;
+                }
+            </style>
+        </div>
+
+        <section class="contact" id="contact">
+            <div class="title">Contact</div>
+            <div class="contact-container">
+                <div class="contact-buttons">
+                    <a href="mailto:digoha03@gmail.com">
+                        <button class="contact-button">
+                            <img src="src/images/icons/email_Icon.svg" alt=""> 
+                            <p>digoha03@gmail.com</p>
+                        </button>
+                    </a>
+                    <a href="https://wa.me/5511991654004">
+                        <button class="contact-button">
+                            <img src="src\images\icons\phone_Icon.svg" alt=""> 
+                            <p>+55 11 991654004</p>
+                        </button>
+                    </a>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/rodrigoha/" target="_blank">
+                        <img src="src\images\icons\linkedin_Icon.svg" alt="">
+                    </a>
+                    <a href="https://www.artstation.com/digoha" target="_blank">
+                        <img src="src/images/icons/artstation_Icon.svg" alt="">
+                    </a>
+                    <a href="https://www.behance.net/rodrigoha" target="_blank">
+                        <img src="src/images/icons/behance_Icon.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/digoha/" target="_blank">
+                        <img src="src\images\icons\instagram_Icon.svg" alt="">
+                    </a>
+                    <a href="https://github.com/digoha" target="_blank">
+                        <img src="src/images/icons/github_Icon.svg" alt="">
+                    </a>
+                    <a href="https://digomeat.itch.io" target="_blank">
+                        <img src="src/images/icons/itchIO_Icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        </div>
+        <script src="src\js\index.js"></script>
+    </main>
+</body>
+</html>

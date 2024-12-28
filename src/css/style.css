@@ -72,6 +72,26 @@ header{
     justify-content: center;
     align-items: center;
     gap: 24px;
+    
+}
+
+.language-btn{
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.language-text{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    top: 7px;
+    right: 4px;
+    -webkit-text-stroke: 1.5px #020808;
+
 }
 
 .title{

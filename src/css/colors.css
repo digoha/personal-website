@@ -60,11 +60,13 @@
 .filter-button.selected:hover{
     background-color: #D87029;
     color: #fff;
+    border: 2px solid #D87029;
 }
 
 .filter-button:hover{
     background-color: #812b18;
     color: #fff;
+    border: 2px solid #812b18;
 }
 
 .project{

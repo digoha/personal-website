@@ -35,9 +35,9 @@
 }
 
 .button-color:hover, .button-color2:hover{
-    background-color: #3BBFC4;
-    color: #031a3f;
-    border: solid#3BBFC4;
+    background-color: #812b18;
+    color: #fff;
+    border: solid#812b18;
 }
 
 .button2{
@@ -48,23 +48,23 @@
 
 .filter-button{
     background-color: #031a3f00;
-    color: #3bbfc4;
-    border: 2px solid #3bbfc4;
+    color: #fff;
+    border: 2px solid #D87029;
 }
 
 .selected{
-    background-color: #3bbfc4;
-    color: #031a3f;
+    background-color: #D87029;
+    color: #fff;
 }
 
 .filter-button.selected:hover{
-    background-color: #3bbfc4;
-    color: #031a3f;
+    background-color: #D87029;
+    color: #fff;
 }
 
 .filter-button:hover{
-    background-color: #3bbfc4;
-    color: #031a3f;
+    background-color: #812b18;
+    color: #fff;
 }
 
 .project{

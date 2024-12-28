@@ -170,7 +170,7 @@ header{
     justify-content: flex-end;
     background-color: #031a3f;
     border-radius: 100%;
-    transform: scaleX(-1);
+    /*transform: scaleX(-1);*/
     border: 10px solid #031a3f;
 }
 

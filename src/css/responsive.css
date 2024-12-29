@@ -7,7 +7,7 @@
     .navBtns{
         padding: 16px;
         font-size: 16px;
-        gap: 24px;
+        gap: 22px;
     }
 
     .headerIcons{
@@ -41,7 +41,7 @@
         padding-bottom: 12px;
         justify-content: center;
         align-items: center;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .name{
@@ -59,7 +59,7 @@
     }
 
     .button1, .button2{
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .home-photo{
@@ -124,5 +124,31 @@
 
     .contact-icons img{
         width: 46px;
+    }
+}
+
+@media (max-width: 370px){
+
+    .navBtns{
+        padding: 16px;
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    .project{
+        width: min-content;
+        object-fit: scale-down;
+
+    }
+
+    .project-image{
+        width: 280px;
+        object-fit: contain;
+        padding: 0px 16px;
+        padding-bottom: 0px;
+    }
+
+    .padding{
+        padding-top: 0px;
     }
 }
